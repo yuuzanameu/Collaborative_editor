@@ -1,0 +1,11 @@
+# Ignore node_modules directory
+# Ignore build/dist directory
+frontend/node_modules/
+frontend/.vscode/
+frontend/dist/
+
+
+Servant_Auth/dist-newstyle/ 
+Servant_Auth/useful_language_extensions.txt
+Servant_Auth/architecture.txt
+

@@ -1,0 +1,23 @@
+
+
+positioning bugs: 
+   1. positioning something as relative without analysing how that positioning affects other elements in the 
+      same stacking context or different contexts leads to unpredictable and extremly hard to predict bugs. 
+   Examples:
+
+      (i) Due to having an unnecesarry relative positioning for some parent element, an overlay that belonged to a 
+      different stacking context didnt render properly: it was stacked beneath the relative positioned parent element.
+
+      (ii) Again, due to relative positioning of an element that was supposed to be covered by an overlay messed with the 
+      inner DOM of the overlay, resulting in partially clickable input boxes and buttons in the sign up modal window
+      sitting on top of the overlay. 
+
+          This was fixed by using React Portals as I didnt want to dig through the mess to set up 
+          the perfect stacking context or whatever. Fuck that. 
+
+possible sign up form errors:
+    1. email or password is invalid
+    2. email is already registered
+
+log in form errors:
+    1. email or password is invalid

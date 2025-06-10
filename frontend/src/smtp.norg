@@ -1,0 +1,30 @@
+#Prerequisites for sending emails to user
+
+- custom public domain registered through some DNS provider
+  such as Cloudfare or AWS Route 53 or GoDaddy 
+- then use this verified and validated domain name through amazon ses to 
+  enable sending emails from a verified domain that you have ownership of.
+
+
+#Rough architecture for account setup through verification email 
+
+
+* User enters email and password 
+ ** check if email and password semantically valid 
+ *** yes? 
+    - send verification link to that email 
+    - user clicks and verifies 
+    - Account created.  
+ *** no? 
+    - display error message 
+    - Account creation pending.  
+
+
+#REST API Learning 
+
+    - Rest apis are what have to be used to send no reply verification emails
+    - so learn them 
+
+#Database integration 
+
+    - Postgres and postgres-some-haskell library 

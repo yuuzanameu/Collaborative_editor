@@ -1,0 +1,83 @@
+
+
+
+Quill for frontend text editor 
+-> use the Quill API itself to gather data about 
+   cursor placement 
+-> next record the operation 
+-> send operation with the string or characters the cursor rendered 
+   to the server for any potential conflict resolving. 
+
+-> Client architecture: 
+   Multiple client have their own instance of the editor. 
+
+TODO:
+  1. for now just start implementing the login page and user authenticatio 
+    
+
+relevant code mirror api:
+   cursorActivity 
+
+What is Navbar? 
+   A navigation bar stickied to the top which shows a bunch of
+   main useful links and sign in options.  
+
+Navbar Behvaiour:
+   Signed in? 
+      Yes -> * Dont show sign up or log in options.
+             * show a account icon which drops down 
+               a bunch of options when hovered over.
+      No -> Show those options 
+
+   Which page? 
+      / -> * SHow Navbar with default styles  
+      /about -> * Show Navbar 
+                * some style changes
+      /documentation -> * Show Navbar
+                        * make it whitish in color, i.e, change some styles 
+      /editor -> dont show navbar. editor page will be dealt with seperately 
+
+Should i do:
+   1 Naive straightforward answer: each page contains its own Navbar
+   2 NavBAr component takes arguments based on what user wants 
+     and renders Navbar accordingly
+   3 
+
+Nov 12, 2024
+ 
+Today's Agenda: 
+
+ 1. Build the site into a project directory of static files
+ 2. Configure nginx to serve the static file project directory/app. 
+ 3. Host the nginx server on my remote aws machine 
+
+
+1/4.8 = 62px 
+3/4.8
+0.8/4.8 = 50px 
+
+https://app.mailersend.com/
+
+
+--> requesting any subpaths of the domain should redirect to home page 
+if user jwt/cookie session has expired or user logged out
+how should this be handled? the app has only a handful of routes so react router
+is all that was handling different routes on the domain. 
+
+1. Should client script make requests to server for every subpath and see if user 
+has logged in and use that to inform our router whether to render the intended
+route or do redirects? 2. or maybe should client react use local storage of the browser 
+after one succesful log in to check log in status for subpaths of the domain? 
+
+if the recommended way is option 1 then was our design to just use client side 
+react router for all routes in the spirit of making a fully client side
+single page app short-sighted given that making requests to backend to fetch log
+in status and then display different frontend pages based off that sounds like an 
+overcomplicated way of simply serving the frontend from the backend for different routes
+based on some auth logic. or are there performance benefits to doing a SPA + routes that 
+were not factoring? 
+
+As far as I understand Servant is more built for making an API for business tasks
+that can be talked to, to fetch or change business data and not for serving 
+webpages so would I have to change to a more traditional backend that serves the
+frontend if we go down this route?

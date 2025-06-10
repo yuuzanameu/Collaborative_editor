@@ -1,0 +1,87 @@
+.home {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+}
+
+.home * {
+    /* border: 2px solid pink; */
+}
+
+.mainWindow {
+    max-width: 93.75rem;
+    width: 85%;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.welcomeTextAndSubtitle{
+    color: #e1e1e1;
+}
+
+.welcometext { 
+    font-weight: bold; 
+    font-size: 4.37rem; 
+}
+
+/* Fonts */
+
+.subtitleText {
+    font-style: italic;
+    font-size: 2.1rem;
+}
+
+.roboto_thin_italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    /* font-style: italic; */
+    font-size: 2.5rem;
+}
+
+.fira_light_italic {
+    font-family: "Fira Sans", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+.editorbuttons {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    width: 27.5rem;
+    margin-top: 3.75rem;
+}
+
+.editorbuttons * {
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Helvetica", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #48c78e;
+    outline: 2.5px solid #48c78e;
+    text-decoration: none;
+    height: 3.75rem;
+    width: 12.5rem;
+    border-radius: 2.5rem;
+}
+
+.editorbuttons *:hover {
+    color: white;
+    background-color: #56c492;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    height: 25rem;
+}

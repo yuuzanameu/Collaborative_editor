@@ -1,0 +1,17 @@
+/* @import "tailwindcss"; */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: 'LucidaSans';
+        src: url('../fonts/lucida_sans_unicode.ttf') format('truetype');
+    }
+}

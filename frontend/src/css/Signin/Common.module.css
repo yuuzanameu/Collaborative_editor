@@ -1,0 +1,131 @@
+.loginButtons {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.loginButtons * {
+    height: 2.5rem;
+    color: white;
+    width: 6.25rem;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: filter;
+    cursor: pointer;
+}
+
+.loginButtons *:hover {
+    filter: brightness(1.5);
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.loading_overlay {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.closeIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    color: #ff4141;
+    border-radius: 6.25px;
+}
+
+.closeIcon:hover {
+    background: #ff4141;
+    color: white;
+    cursor: pointer;
+}
+
+.fira_sans_semibold {
+    font-family: "Fira Sans", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.formInputBox {
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.formInputBox input {
+    font-size: 20px;
+    color: #333333;
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+.errortip {
+    width: 31.25rem;
+    min-height: 62.5px;
+    height: auto;
+    border: 2px solid #ff4141;
+    border-radius: 12.5px;
+    margin-bottom: 18.75px;
+    font-family: "Arial";
+    font-size: 18.75px;
+    /* font-style: bold; */
+    color: #ff4141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.baseFeedback {
+    width: 31.25rem;
+    min-height: 62.5px;
+    height: auto;
+    border-radius: 12.5px;
+    margin-bottom: 18.75px;
+    font-family: "Arial";
+    font-size: 18.75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signupSubmit {
+    font-family: "Fira Sans";
+    background-color: #0073e6;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.signupSubmit:hover {
+    filter: brightness(1.2);
+}
+
+.signinicons {
+    transform: scale(50%);
+}
